@@ -11,7 +11,7 @@ const navlinks: NavLink[] = [
   { name: "Projects", href: "/projects" },
 ];
 
-export const Navbar: React.FC = () => {
+ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-slate-900 border-b border-slate-800">
@@ -94,3 +94,5 @@ export const Navbar: React.FC = () => {
     </nav>
   );
 }
+
+export default Navbar;
