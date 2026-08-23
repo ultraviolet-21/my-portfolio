@@ -6,6 +6,7 @@ interface Project {
   title: string;
   description: string;
   tech: string[];
+  link: string;
 }
 
 export default function Projects() {
@@ -38,6 +39,14 @@ export default function Projects() {
           <div key={project.id} className="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
             <p className="text-slate-400 mb-4">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 hover:text-cyan-300 underline"
+            >
+              View Project
+            </a>
             <div className="flex flex-wrap gap-2">
               {project.tech.map((t, i) => (
                 <span key={i} className="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs rounded-full">
@@ -51,3 +60,9 @@ export default function Projects() {
     </div>
   );
 }
+
+//To Do: 
+// change colors using Tailwind
+// add more projects
+// add image(s) to about
+// image generation thing 

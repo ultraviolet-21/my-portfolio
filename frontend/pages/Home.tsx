@@ -1,7 +1,9 @@
 export default function Home() {
     return (
         <div className="max-w-5xl mx-auto px-4 py-12">
-            <h1 className="text-4xl font-bold mb-8 text-cyan-400">Welcome to My Portfolio</h1>
+            <h1 className="text-4xl font-bold mb-8" style={{ color: "cyan" }}>
+                Welcome to My Portfolio
+            </h1>
             <p className="text-slate-300 mb-4">
                 Image generation thing goes here.
             </p>
