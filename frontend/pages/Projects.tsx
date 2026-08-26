@@ -1,3 +1,5 @@
+// Projects page, fetches project data from the backend and displays it in a grid layout
+
 import { useEffect, useState } from 'react';
 import { API_BASE_URL } from '../src/utils/api';
 
@@ -64,5 +66,4 @@ export default function Projects() {
 //To Do: 
 // change colors using Tailwind
 // add more projects
-// add image(s) to about
 // image generation thing 
