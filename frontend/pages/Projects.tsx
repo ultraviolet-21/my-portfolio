@@ -32,8 +32,8 @@ export default function Projects() {
 
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-8" style={{ color: "cyan" }}>
+    <div className="max-w-5xl mx-auto px-4 py-12 bg-rose-300">
+      <h1 className="text-4xl font-bold mb-8" style={{ color: "white" }}>
   My Projects
 </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -55,15 +55,25 @@ export default function Projects() {
                   {t}
                 </span>
               ))}
+              
             </div>
+            
           </div>
         ))}
+      
       </div>
-    </div>
+      Check out <a 
+      href="https://github.com/ultraviolet-21"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-cyan-400 hover:text-cyan-300 underline"
+    >
+      https://github.com/ultraviolet-21
+    </a> for more of my work!
+  </div>
   );
 }
 
 //To Do: 
-// change colors using Tailwind
 // add more projects
-// image generation thing 
+// OpenAI API integration

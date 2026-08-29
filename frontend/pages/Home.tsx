@@ -20,8 +20,8 @@ export default function Home() {
     const [image, setImage] = useState<ImageData | null>(null);
 
     return (
-        <div className="max-w-5xl mx-auto px-4 py-12">
-            <h1 className="text-4xl font-bold mb-8" style={{ color: "cyan" }}>
+        <div className="max-w-5xl mx-auto px-4 py-12 bg-rose-300">
+            <h1 className="text-4xl font-bold mb-8" style={{ color: "white" }}>
                 Welcome to My Portfolio
             </h1>
 
@@ -41,10 +41,10 @@ export default function Home() {
                 <img
                     src={image.src.large}
                     alt={`Pexels image by ${image.photographer}`}
-                    className="mt-8 w-full rounded-lg shadow-lg"
+                    className="mt-8 w-full bg-rose-300 rounded-lg shadow-lg"
                 />
             )}
-            <p className="text-slate-300">
+            <p className="text-white">
                 Feel free to explore my projects and get in touch if you'd like to collaborate!
             </p>
         </div>

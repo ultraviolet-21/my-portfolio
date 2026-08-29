@@ -12,7 +12,7 @@ import Projects from '../pages/Projects';
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-slate-950 text-slate-100">
+      <div className="flex flex-col min-h-screen bg-rose-300 text-white">
         <Navbar />
         <main className="flex-grow">
           <Routes>
