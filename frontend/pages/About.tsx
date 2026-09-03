@@ -7,7 +7,7 @@ export default function About() {
         About Me
       </h1>
       <div className="flex justify-center mb-6">
-      <img src = "../images/portrait.jpg" alt = "portrait" className="w-48 h-48 rounded-full mb-4"/>
+      <img src = "images/portrait.jpg" alt = "portrait" className="w-48 h-48 rounded-full mb-4"/>
       </div>
       <p className="text-white mb-4">
         Hello! My name is Urja, and I'm a recent UCI graduate passionate about building practical, real-world solutions with technology.
