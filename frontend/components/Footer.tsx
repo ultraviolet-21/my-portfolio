@@ -1,5 +1,6 @@
 import React from "react";
 
+//footer includes contact information and photo credits
  const Footer: React.FC = () => {
   return (
     <footer className="bg-rose-300 border-t border-rose-300 py-6">    

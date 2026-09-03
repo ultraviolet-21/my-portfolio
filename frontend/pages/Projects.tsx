@@ -11,6 +11,7 @@ interface Project {
   link: string;
 }
 
+
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
@@ -73,7 +74,3 @@ export default function Projects() {
   </div>
   );
 }
-
-//To Do: 
-// add more projects
-// OpenAI API integration
