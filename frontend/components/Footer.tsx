@@ -9,9 +9,6 @@ import React from "react";
                 Contact: <a href="mailto: urjav21@gmail.com" className="text-white hover:text-white">
                     urjav21@gmail.com 
                 </a>
-                <a href = "https://www.pexels.com" target="_blank" rel="noreferrer" className="text-white hover:text-white">
-                     Photos provided by Pexels
-                </a>
             </p>
         </div>
     </footer>

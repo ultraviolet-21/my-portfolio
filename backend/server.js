@@ -16,29 +16,10 @@ app.get('/api/health', (req, res) => {
 });
 
 app.get('/', async (_req, res) => {
-  const query = String(_req.query.q || 'nature'); // Default to 'nature' if no query is provided
-  const pexelsApiKey = process.env.VITE_PEXELS_API_KEY;
 
-  const response = await fetch(
-    `https://api.pexels.com/v1/search?query=${encodeURIComponent(
-      query
-    )}&per_page=12`,
-    {
-      headers: {
-        Authorization: pexelsApiKey || '',
-      },
-    }
-  );
-
-  if (!response.ok) {
-    return res.status(response.status).json({ error: 'Failed to fetch images from Pexels API' });
-  }
-
-  const data = await response.json();
   
   res.status(200).json({
-    message: 'Welcome to the backend server!',
-    images: data.photos
+    message: 'Welcome to the backend server!'
   });
 });
 

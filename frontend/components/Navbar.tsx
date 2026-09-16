@@ -7,7 +7,7 @@ interface NavLink {
 
 const navlinks: NavLink[] = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+    { name: "Resume", href: "/resume" },
   { name: "Projects", href: "/projects" },
 ];
 
@@ -20,7 +20,7 @@ const navlinks: NavLink[] = [
             <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
                     <div className="flex-shrink-0">
-                        <span className="text-white font-bold text-xl">My Portfolio</span>
+                        <span className="text-gray-500 font-bold text-xl">My Portfolio</span>
                     </div>
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
@@ -28,8 +28,10 @@ const navlinks: NavLink[] = [
                             {navlinks.map((link) => (
                                 <a
                                     key={link.name}
+
+
                                     href={link.href}
-                                    className="text-white hover:bg-slate-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    className="text-gray-500 hover:bg-slate-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     {link.name}
                                 </a>
@@ -40,7 +42,7 @@ const navlinks: NavLink[] = [
                 <div className="-mr-2 flex md:hidden"> 
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="bg-rose-600 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-rose-800 focus:ring-white"
+                        className="bg-rose-600 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-white hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-rose-800 focus:ring-white"
                     >
                         <span className="sr-only">Open main menu</span>
                         {isOpen ? (
@@ -85,7 +87,7 @@ const navlinks: NavLink[] = [
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-white hover:bg-slate-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                            className="text-gray-500 hover:bg-slate-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                         >
                             {link.name}
                         </a>

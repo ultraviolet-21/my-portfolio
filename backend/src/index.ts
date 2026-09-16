@@ -15,47 +15,6 @@ app.get('/', (_req: Request, res: Response) => {
   res.status(200).json({ message: 'Welcome to the backend server!' });
 });
 
-app.post('/', async (req: Request, res: Response) => {
-  const { imageUrl } = req.body as { imageUrl?: unknown };
-  if (typeof imageUrl !== 'string' || imageUrl.length === 0) {
-    return res.status(400).json({ error: 'imageUrl is required' });
-  }
-
-  const mistralApiKey = process.env.MISTRAL_API_KEY || process.env.VITE_MISTRAL_API_KEY;
-  if (!mistralApiKey) {
-    return res.status(500).json({ error: 'MISTRAL_API_KEY is not configured' });
-  }
-
-  //generate caption using Mistral API
-  try {
-    const mistral = new Mistral({ apiKey: mistralApiKey });
-    const response = await mistral.chat.complete({
-      model: 'pixtral-12b-2409',
-      messages: [{
-        role: 'user',
-        content: [
-          { type: 'text', text: 'Describe this image in one concise sentence.' },
-          { type: 'image_url', imageUrl }
-        ]
-      }]
-    });
-
-    const content = response.choices[0]?.message?.content;
-    const caption = typeof content === 'string'
-      ? content
-      : Array.isArray(content)
-        ? content
-          .filter((part): part is { type: 'text'; text: string } => part.type === 'text' && typeof part.text === 'string')
-          .map((part) => part.text)
-          .join(' ')
-        : '';
-    return res.status(200).json({ caption: caption || 'No caption available.' });
-  } catch (error) {
-    console.error('Mistral caption request failed:', error);
-    return res.status(502).json({ error: 'Failed to generate image caption' });
-  }
-});
-
 //health check
 app.get('/api/health', (_req: Request, res: Response) => {
   res.status(200).json({
