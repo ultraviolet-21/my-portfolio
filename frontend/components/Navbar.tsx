@@ -9,6 +9,7 @@ const navlinks: NavLink[] = [
   { name: "Home", href: "/" },
     { name: "Resume", href: "/resume" },
   { name: "Projects", href: "/projects" },
+  { name: "Blog", href: "/blog" },
 ];
 
 // Navbar component with responsive design and toggle functionality for mobile view
