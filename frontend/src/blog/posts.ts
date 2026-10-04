@@ -24,5 +24,11 @@ export const posts: BlogPostMeta[] = [
     title: 'Book Repository',
     date: '2026-10-03',
     excerpt: 'An in-depth explanation of Book Repository, my program to help students find affordable textbooks.',
-  }
+  },
+  {
+    slug: 'Darknet',
+    title: 'Darknet',
+    date: '2026-10-03',
+    excerpt: "An analysis of the capabilities of AI and other technologies as portrayed in Matthew Mather's Darknet.",
+  },
 ];

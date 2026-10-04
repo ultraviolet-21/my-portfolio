@@ -7,6 +7,9 @@ export default function Blog() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold mb-8 text-gray-900">Blog</h1>
+      <p className="text-gray-900 mb-6">
+        Welcome to my blog! Here you'll find posts about my projects and topics I'm passionate about.
+      </p>
       <div className="flex flex-col gap-6">
         {posts.map((post) => (
           <Link
