@@ -67,7 +67,7 @@ export default function Projects() {
       href="https://github.com/ultraviolet-21"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-cyan-400 hover:text-cyan-300 underline"
+      className="text-blue-500 hover:text-blue-700 underline"
     >
       https://github.com/ultraviolet-21
     </a> for more of my work!

@@ -38,7 +38,7 @@ export default function BlogPost() {
     return (
       <div className="max-w-3xl mx-auto px-4 py-12">
         <p className="text-gray-500 mb-4">Post not found.</p>
-        <Link to="/blog" className="text-cyan-400 hover:text-cyan-300 underline">
+        <Link to="/blog" className="text-blue-500 hover:text-blue-700 underline">
           ← Back to blog
         </Link>
       </div>
@@ -51,7 +51,7 @@ export default function BlogPost() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <Link to="/blog" className="text-cyan-400 hover:text-cyan-300 underline">
+      <Link to="/blog" className="text-blue-500 hover:text-blue-700 underline">
         ← Back to blog
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-2 text-gray-900">{meta.title}</h1>
@@ -62,7 +62,7 @@ export default function BlogPost() {
           [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:text-gray-500 [&_h1]:mt-6 [&_h1]:mb-4
           [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:text-gray-500 [&_h2]:mt-6 [&_h2]:mb-4
           [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-gray-500 [&_h3]:mt-4 [&_h3]:mb-6
-          [&_a]:text-cyan-400 [&_a]:underline [&_a]:hover:text-cyan-300
+          [&_a]:text-blue-500 [&_a]:underline [&_a]:hover:text-blue-700
           [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-4
           [&_li]:mb-1
           [&_code]:bg-slate-800 [&_code]:px-1 [&_code]:rounded [&_code]:text-sm
